@@ -1,0 +1,8 @@
+{
+  "project": { "slug": "sbs-auto-cart-rescue", "mode": "web", "locale": "es-CO" },
+  "brand": { "name": "SBS Seguros", "appName": "Cotiza tu auto", "url": "https://www.sbseguros.co/", "primary": "#0756bd", "secondary": "#101a36", "accent": "#19a985" },
+  "journey": { "entry": "auto_quote", "conversion": "continue_with_advisor", "authentication": "none_in_demo", "profile": "prospective_auto_customer", "incentive": "saved_quote_and_contextual_advisor_help", "friction": ["18_seconds_inactivity", "page_exit", "return_visit"], "helpChannels": ["genesys_messenger"], "continuity": "resume_saved_quote" },
+  "genesys": { "environment": "prod-usw2", "deploymentId": "2e9f24de-f485-4627-b74e-2813a06ab595", "bootstrapUrl": "https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js", "autoOpenOnAccept": true, "contextFields": ["journeyStep", "frictionType", "product", "vehicle", "city", "selectedPlan", "estimatedMonthlyPremiumCOP", "nextBestAction"] },
+  "demo": { "quoteCurrency": "COP", "resetQuery": "reset=1", "frictionDelayMs": 18000, "quotesAreIllustrative": true },
+  "assets": { "useInternetImages": false, "downloadLocally": false, "attributionRequired": false }
+}
